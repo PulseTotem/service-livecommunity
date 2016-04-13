@@ -29,6 +29,8 @@ class LiveCommunity extends SourceServer {
 	constructor(listeningPort : number, arguments : Array<string>, uploadDir : string = "") {
         super(listeningPort, arguments, uploadDir);
 
+		Logger.debug(uploadDir);
+
         this.init();
     }
 
